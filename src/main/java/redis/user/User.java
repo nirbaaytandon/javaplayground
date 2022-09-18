@@ -1,5 +1,8 @@
 package redis.user;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -7,6 +10,8 @@ import java.io.Serializable;
  * Model layer for application
  */
 @Entity
+@NoArgsConstructor
+@Data
 public class User implements Serializable {
 
     public static final long serialVersionUID = 9876873145125386L;
@@ -18,38 +23,11 @@ public class User implements Serializable {
     private String name;
     private long followers;
 
-    public User() {
-
-    }
-
     public User(String name, long followers) {
         this.name = name;
         this.followers = followers;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public long getFollowers() {
-        return followers;
-    }
-
-    public void setFollowers(long followers) {
-        this.followers = followers;
-    }
 
     @Override
     public String toString() {
