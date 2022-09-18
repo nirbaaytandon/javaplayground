@@ -5,13 +5,13 @@ import java.util.Arrays;
 /**
  * https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3237/
  */
-public class FindNumbersWithEvenNumberOfDigits {
+public class FindNumbersWithEvenNumberOfDigitsndNumbersWithEvenNumberOfDigits {
 
     public static void main(String[] args) {
-        FindNumbersWithEvenNumberOfDigits findNumbersWithEvenNumberOfDigits = new FindNumbersWithEvenNumberOfDigits();
+        FindNumbersWithEvenNumberOfDigitsndNumbersWithEvenNumberOfDigits findNumbersWithEvenNumberOfDigitsndNumbersWithEvenNumberOfDigits = new FindNumbersWithEvenNumberOfDigitsndNumbersWithEvenNumberOfDigits();
 
         int[] n = new int[]{1, 34, 56, 888, 66666};
-        System.out.println(findNumbersWithEvenNumberOfDigits.findNumbers(n));
+        System.out.println(findNumbersWithEvenNumberOfDigitsndNumbersWithEvenNumberOfDigits.findNumbers(n));
 
     }
 
