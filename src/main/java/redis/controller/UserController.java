@@ -36,7 +36,7 @@ public class UserController {
         return user;
     }
 
-    @CacheEvict(value = "users", allEntries=true)
+    @CacheEvict(value = "users", allEntries = true)
     @DeleteMapping("/{id}")
     public void deleteUserByID(@PathVariable Long id) {
         LOGGER.info("deleting person with id {}", id);
